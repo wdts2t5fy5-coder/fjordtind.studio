@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt | fjordtind.studio</title>
+    <meta
+      name="description"
+      content="Kontakt fjordtind.studio for skreddersydd nettside, redesign eller digital strategi."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-contact">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Til forsiden">
+        <img src="Logo_and_text.png" alt="fjordtind.studio" />
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#work">Prosjekter</a>
+        <a href="index.html#about">Tilnærming</a>
+        <a class="nav-cta" href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-wrap">
+        <p class="kicker">Kontakt</p>
+        <h1>La oss lage noe rått sammen.</h1>
+        <p>
+          Fortell kort om prosjektet ditt. Jeg svarer raskt med forslag til
+          neste steg.
+        </p>
+
+        <form
+          class="contact-form"
+          name="fjordtind-kontakt"
+          method="post"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/takk.html"
+        >
+          <input type="hidden" name="form-name" value="fjordtind-kontakt" />
+          <p class="sr-only">
+            <label>Ikke fyll ut dette feltet: <input name="bot-field" /></label>
+          </p>
+          <div class="row">
+            <input name="navn" placeholder="Navn" required />
+            <input name="firma" placeholder="Firma" />
+          </div>
+          <div class="row">
+            <input name="epost" type="email" placeholder="E-post" required />
+            <input name="telefon" placeholder="Telefon" />
+          </div>
+          <textarea
+            name="melding"
+            placeholder="Hva skal siden gjøre for deg? Beskriv mål, målgruppe og ønsket uttrykk."
+            required
+          ></textarea>
+          <button class="btn btn-primary" type="submit">Send forespørsel</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> fjordtind.studio</span>
+      <a class="signature-link" href="https://fjordtind.studio">crafted by fjordtind.studio</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

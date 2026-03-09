@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="fjordtind.studio er midlertidig nede for vedlikehold. Vi hjelper små og mellomstore bedrifter med å komme seg på nett." />
+  <title>fjordtind.studio | Vedlikehold</title>
+  <style>
+    :root{
+      --blue:#165A74;
+      --ink:#0f172a;
+      --muted:#475569;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --line:rgba(15,23,42,.12);
+      --text:rgba(15,23,42,.86);
+      --text-66:rgba(15,23,42,.66);
+      --shadow:0 18px 60px rgba(15,23,42,.12);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      min-height:100vh;
+      font-family:"Poppins",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(22,90,116,.22), transparent 60%),
+        radial-gradient(900px 500px at 90% 0%, rgba(22,90,116,.14), transparent 55%),
+        var(--bg);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:32px 20px;
+    }
+    main{
+      width:min(760px, 100%);
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:40px clamp(22px, 4vw, 48px);
+      box-shadow:var(--shadow);
+      text-align:center;
+      margin:auto 0 18px;
+    }
+    .logo-link{
+      text-decoration:none;
+      color:inherit;
+      display:inline-block;
+    }
+    .logo{
+      display:flex;
+      justify-content:center;
+      margin-bottom:20px;
+    }
+    .logo img{
+      width:min(500px, 100%);
+      height:auto;
+      display:block;
+    }
+    h1{
+      margin:28px 0 24px;
+      font-size:clamp(28px, 4.2vw, 40px);
+      line-height:1.08;
+    }
+    p{
+      margin:10px auto 0;
+      max-width:60ch;
+      color:var(--text);
+      font-size:17px;
+      line-height:1.6;
+    }
+    .actions{
+      margin-top:40px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px 16px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:800;
+      border:1px solid var(--line);
+      color:var(--ink);
+      background:#fff;
+    }
+    .btn-primary{
+      border:none;
+      color:#ffffff;
+      background:linear-gradient(135deg,var(--blue),var(--blue));
+    }
+    .foot{
+      margin-top:22px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .wrap{max-width:1320px;margin:0 auto;padding:0 28px}
+    .footer{
+      width:100%;
+      padding:26px 0 36px;
+      border-top:1px solid var(--line);
+      margin-top:28px;
+      color:var(--text-66);
+    }
+    .footer a{color:inherit}
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="title">
+    <a class="logo-link" href="https://fjordtind.studio/" aria-label="Gå til fjordtind.studio">
+      <div class="logo">
+        <img src="/Logo_and_text.png" alt="fjordtind.studio" />
+      </div>
+    </a>
+    <h1 id="title">Me er straks på plass.</h1>
+    <p>
+      fjordtind.studio er i vedlikeholdsmodus akkurat nå.
+      Vi hjelper små og mellomstore bedrifter med å komme seg på nett.
+    </p>
+    <p>
+      Treng du hjelp i mellomtida, er det berre å ta kontakt.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="tel:+4748265364">Ring 48 26 53 64</a>
+      <a class="btn" href="mailto:kris@fjordtind.studio">Send e-post</a>
+    </div>
+    <div class="foot">fjordtind.studio</div>
+  </main>
+  <footer class="footer">
+    <div class="wrap" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;justify-content:space-between">
+      <div style="display:grid;gap:4px;width:100%">
+        <div>© <span id="y"></span> fjordtind.studio</div>
+        <div style="font-size:12px;opacity:.8">Design og utvikling for bedrifter som vil opp og fram.</div>
+      </div>
+      <div style="width:100%;text-align:center;font-size:12px;opacity:.7">
+        <a href="https://fjordtind.studio" style="text-decoration:none;color:inherit">crafted by fjordtind.studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
