@@ -60,6 +60,22 @@
       height:auto;
       display:block;
     }
+    .logo svg{
+      width:min(500px, 100%);
+      height:auto;
+      display:block;
+    }
+    .sr-only{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0, 0, 0, 0);
+      white-space:nowrap;
+      border:0;
+    }
     h1{
       margin:28px 0 24px;
       font-size:clamp(28px, 4.2vw, 40px);
@@ -116,7 +132,22 @@
   <main role="main" aria-labelledby="title">
     <a class="logo-link" href="https://fjordtind.studio/" aria-label="Gå til fjordtind.studio">
       <div class="logo">
-        <img src="Logo_and_text.png" alt="fjordtind.studio" />
+        <svg viewBox="0 0 760 360" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#165A74">
+            <polygon points="92,190 172,118 218,154 256,106 320,70 290,132 238,182 268,164 294,124 324,108 282,186"/>
+            <polygon points="270,178 356,78 412,28 458,82 514,188 468,154 456,112 430,150 392,86 404,134 368,186 392,152 364,122 326,188"/>
+            <polygon points="500,188 552,116 592,148 626,118 704,188 654,166 620,136 616,172 576,146 588,182"/>
+            <path d="M401 30 L408 20 L426 18 L440 22 L452 14 L468 20 L474 32 L470 42 L454 46 L436 44 L418 50 L398 48 L390 58 L382 56 L386 44 Z"/>
+            <path d="M452 20 L466 20 L476 26 L474 36 L462 40 L450 34 Z"/>
+            <path d="M398 48 L406 48 L404 78 L396 78 Z"/>
+            <path d="M426 46 L434 46 L432 80 L424 80 Z"/>
+            <path d="M462 18 C468 4 480 0 488 10 L482 14 C476 8 468 10 462 22 Z"/>
+            <path d="M452 18 C456 6 466 2 474 12 L468 14 C462 10 456 12 452 22 Z"/>
+          </g>
+          <text x="380" y="284" text-anchor="middle" fill="#0f172a" font-size="88" font-weight="700" font-family="Poppins, Arial, sans-serif">fjordtind</text>
+          <text x="380" y="328" text-anchor="middle" fill="#165A74" font-size="24" font-weight="600" letter-spacing="10" font-family="Poppins, Arial, sans-serif">STUDIO</text>
+        </svg>
+        <span class="sr-only">fjordtind.studio</span>
       </div>
     </a>
     <h1 id="title">Me er straks på plass.</h1>
